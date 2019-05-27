@@ -41,8 +41,6 @@
 [v _InitDisplay7Seg InitDisplay7Seg `(v  1 e 1 0 ]
 "138
 [v _Init8LEDs Init8LEDs `(v  1 e 1 0 ]
-"147
-[v _Display7Seg Display7Seg `(v  1 e 1 0 ]
 "13 C:\Users\big_m\Desktop\DICIS\Microcontroladores\adc7seg.X/config_main.h
 [v _volt volt `f  1 e 4 0 ]
 "14
@@ -55,8 +53,6 @@
 [v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
 "423
 [v _ANSELE ANSELE `VEuc  1 e 1 @3935 ]
-"2901
-[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
 "3779
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
 "4105
@@ -117,8 +113,8 @@
 [v _ADIF ADIF `VEb  1 e 0 @31990 ]
 "14898
 [v _GIE GIE `VEb  1 e 0 @32663 ]
-"15135
-[v _LA1 LA1 `VEb  1 e 0 @31817 ]
+"15132
+[v _LA0 LA0 `VEb  1 e 0 @31816 ]
 "15552
 [v _PEIE PEIE `VEb  1 e 0 @32662 ]
 "81 C:\Users\big_m\Desktop\DICIS\Microcontroladores\adc7seg.X\main.c
@@ -132,27 +128,7 @@
 [v interruptadc@adcin adcin `i  1 p 2 0 ]
 "124
 } 0
-"11 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-{
-"21
-[v ___fldiv@grs grs `ul  1 a 4 68 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 61 ]
-"20
-[v ___fldiv@new_exp new_exp `s  1 a 2 66 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 73 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 72 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 65 ]
-"11
-[v ___fldiv@b b `d  1 p 4 49 ]
-[v ___fldiv@a a `d  1 p 4 53 ]
-"185
-} 0
-"126 C:\Users\big_m\Desktop\DICIS\Microcontroladores\adc7seg.X\main.c
+"126
 [v _InitDisplay7Seg InitDisplay7Seg `(v  1 e 1 0 ]
 {
 "136
@@ -161,103 +137,4 @@
 [v _Init8LEDs Init8LEDs `(v  1 e 1 0 ]
 {
 "145
-} 0
-"147
-[v _Display7Seg Display7Seg `(v  1 e 1 0 ]
-{
-"149
-[v Display7Seg@v_seg v_seg `[10]uc  1 a 10 70 ]
-"150
-[v Display7Seg@cen cen `i  1 a 2 84 ]
-[v Display7Seg@dec dec `i  1 a 2 82 ]
-[v Display7Seg@uni uni `i  1 a 2 80 ]
-"147
-[v Display7Seg@volt volt `f  1 p 4 65 ]
-"148
-[v Display7Seg@F5146 F5146 `[10]uc  1 s 10 F5146 ]
-"173
-} 0
-"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
-[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-{
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-"13
-[v ___xxtofl@arg arg `ul  1 a 4 10 ]
-"12
-[v ___xxtofl@exp exp `uc  1 a 1 9 ]
-"10
-[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
-[v ___xxtofl@val val `l  1 p 4 0 ]
-"15
-[v ___xxtofl@sign sign `uc  1 a 1 8 ]
-"44
-} 0
-"43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c
-[v ___fltol __fltol `(l  1 e 4 0 ]
-{
-"45
-[v ___fltol@exp1 exp1 `uc  1 a 1 58 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 57 ]
-"43
-[v ___fltol@f1 f1 `d  1 p 4 49 ]
-"70
-} 0
-"245 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcadd.c
-[v ___flsub __flsub `(d  1 e 4 0 ]
-{
-[v ___flsub@b b `d  1 p 4 16 ]
-[v ___flsub@a a `d  1 p 4 20 ]
-"250
-} 0
-"10
-[v ___fladd __fladd `(d  1 e 4 0 ]
-{
-"17
-[v ___fladd@grs grs `uc  1 a 1 15 ]
-"15
-[v ___fladd@bexp bexp `uc  1 a 1 14 ]
-"16
-[v ___fladd@aexp aexp `uc  1 a 1 13 ]
-"13
-[v ___fladd@signs signs `uc  1 a 1 12 ]
-"10
-[v ___fladd@b b `d  1 p 4 0 ]
-[v ___fladd@a a `d  1 p 4 4 ]
-"237
-} 0
-"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S453 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S458 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S461 . 4 `l 1 i 4 0 `d 1 f 4 0 `S453 1 fAsBytes 4 0 `S458 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S461  1 a 4 43 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 37 ]
-[s S529 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S532 . 2 `s 1 i 2 0 `us 1 n 2 0 `S529 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S532  1 a 2 47 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 42 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 41 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 36 ]
-"8
-[v ___flmul@b b `d  1 p 4 24 ]
-[v ___flmul@a a `d  1 p 4 28 ]
-"205
-} 0
-"7 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\awmod.c
-[v ___awmod __awmod `(i  1 e 2 0 ]
-{
-"10
-[v ___awmod@sign sign `uc  1 a 1 64 ]
-[v ___awmod@counter counter `uc  1 a 1 63 ]
-"7
-[v ___awmod@dividend dividend `i  1 p 2 59 ]
-[v ___awmod@divisor divisor `i  1 p 2 61 ]
-"34
 } 0

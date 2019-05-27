@@ -89,8 +89,8 @@ void main(void) {
     ADCON2 = 0x94;      //ACQT = 4TAD, TAD de 1microS, Justificado derecha 
     ADCON1 = 0x00;      //Vref- = GND, Vref+ = +5V
     LATA = 0x00;        //Limpiamos A
-    TRISA = 0x00;       //bit RA0 como salida 
-    ANSELA = 0x02;      //RA0 como analógico
+    TRISA = 0x00;       //bit RA1 como salida 
+    ANSELA = 0x01;      //RA1 como analógico
     TRISC = 0x04;       //bit RC2 como entrada
     ANSELC = 0x04;      //RC2 como analógico
     ADCON0 = 0x39;      //Enciendo ADC, canal AN14
@@ -100,15 +100,15 @@ void main(void) {
     ADIE = 1;           //Habilita interrupción ADC
     
     while(1){
-        __delay_ms(2);              //Retardo para conversión
+        __delay_ms(1);              //Retardo para conversión
         ADCON0bits.GO=1;            //Inicia conversión ADC
         adcin = interruptadc(adcin);
         
         
-        PORTA = adcin/4;            //Asigna valor adcin a puerto A
-        volt = (adcin*_vin)/_base;  //Conversión a flotante
-        Display7Seg(volt);          //Llama a función desplegar en displays
-        LA1=volt;                   
+        //PORTA = adcin/4;            //Asigna valor adcin a puerto A
+        //volt = (adcin*_vin)/_base;  //Conversión a flotante
+        //Display7Seg(volt);          //Llama a función desplegar en displays
+        LA0=adcin;                  
     }
     return;
 }

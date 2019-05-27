@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 #define _XTAL_FREQ 4000000
-#define _mSec 5
+#define _mSec 1
 #define _vin 5.0
 #define _base 1023.0
 

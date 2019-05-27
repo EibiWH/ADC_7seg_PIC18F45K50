@@ -8248,7 +8248,7 @@ void main(void) {
     ADCON1 = 0x00;
     LATA = 0x00;
     TRISA = 0x00;
-    ANSELA = 0x02;
+    ANSELA = 0x01;
     TRISC = 0x04;
     ANSELC = 0x04;
     ADCON0 = 0x39;
@@ -8258,15 +8258,15 @@ void main(void) {
     ADIE = 1;
 
     while(1){
-        _delay((unsigned long)((2)*(4000000/4000.0)));
+        _delay((unsigned long)((1)*(4000000/4000.0)));
         ADCON0bits.GO=1;
         adcin = interruptadc(adcin);
 
 
-        PORTA = adcin/4;
-        volt = (adcin*5.0)/1023.0;
-        Display7Seg(volt);
-        LA1=volt;
+
+
+
+        LA0=adcin;
     }
     return;
 }
@@ -8313,17 +8313,17 @@ void Display7Seg(float volt)
 
     LATD = v_seg[uni];
     LATE = 0x01;
-    _delay((unsigned long)((5)*(4000000/4000.0)));
+    _delay((unsigned long)((1)*(4000000/4000.0)));
 
     LATE = 0x00;
     LATD = v_seg[dec];
     LATE = 0x02;
-    _delay((unsigned long)((5)*(4000000/4000.0)));
+    _delay((unsigned long)((1)*(4000000/4000.0)));
 
     LATE = 0x00;
     LATD = v_seg[cen] + 0x80;
     LATE = 0x04;
-    _delay((unsigned long)((5)*(4000000/4000.0)));
+    _delay((unsigned long)((1)*(4000000/4000.0)));
 
     LATE = 0x00;
 

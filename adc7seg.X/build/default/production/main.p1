@@ -88,15 +88,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "79 main.c
 [; ;main.c: 79: int interruptadc(int);
 [v _interruptadc `(i ~T0 @X0 0 ef1`i ]
-"2901 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 2901: extern volatile unsigned char PORTA __attribute__((address(0xF80)));
-[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
-"78 main.c
-[; ;main.c: 78: void Display7Seg(float);
-[v _Display7Seg `(v ~T0 @X0 0 ef1`f ]
-"15135 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
-[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 15135: extern volatile __bit LA1 __attribute__((address(0x7C49)));
-[v _LA1 `Vb ~T0 @X0 0 e@31817 ]
+"15132 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 15132: extern volatile __bit LA0 __attribute__((address(0x7C48)));
+[v _LA0 `Vb ~T0 @X0 0 e@31816 ]
 "13791
 [; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h: 13791: extern volatile __bit ADIF __attribute__((address(0x7CF6)));
 [v _ADIF `Vb ~T0 @X0 0 e@31990 ]
@@ -871,8 +865,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 92:     TRISA = 0x00;
 [e = _TRISA -> -> 0 `i `uc ]
 "93
-[; ;main.c: 93:     ANSELA = 0x02;
-[e = _ANSELA -> -> 2 `i `uc ]
+[; ;main.c: 93:     ANSELA = 0x01;
+[e = _ANSELA -> -> 1 `i `uc ]
 "94
 [; ;main.c: 94:     TRISC = 0x04;
 [e = _TRISC -> -> 4 `i `uc ]
@@ -896,26 +890,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 640 ]
 {
 "103
-[; ;main.c: 103:         _delay((unsigned long)((2)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 103:         _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "104
 [; ;main.c: 104:         ADCON0bits.GO=1;
 [e = . . _ADCON0bits 3 1 -> -> 1 `i `uc ]
 "105
 [; ;main.c: 105:         adcin = interruptadc(adcin);
 [e = _adcin -> ( _interruptadc (1 -> _adcin `i `ui ]
-"108
-[; ;main.c: 108:         PORTA = adcin/4;
-[e = _PORTA -> / _adcin -> -> 4 `i `ui `uc ]
-"109
-[; ;main.c: 109:         volt = (adcin*5.0)/1023.0;
-[e = _volt -> / * -> _adcin `d .5.0 .1023.0 `f ]
-"110
-[; ;main.c: 110:         Display7Seg(volt);
-[e ( _Display7Seg (1 _volt ]
 "111
-[; ;main.c: 111:         LA1=volt;
-[e = _LA1 -> _volt `b ]
+[; ;main.c: 111:         LA0=adcin;
+[e = _LA0 -> _adcin `b ]
 "112
 [; ;main.c: 112:     }
 }
@@ -1074,8 +1059,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 157:     LATE = 0x01;
 [e = _LATE -> -> 1 `i `uc ]
 "158
-[; ;main.c: 158:     _delay((unsigned long)((5)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 158:     _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "160
 [; ;main.c: 160:     LATE = 0x00;
 [e = _LATE -> -> 0 `i `uc ]
@@ -1086,8 +1071,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 162:     LATE = 0x02;
 [e = _LATE -> -> 2 `i `uc ]
 "163
-[; ;main.c: 163:     _delay((unsigned long)((5)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 163:     _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "165
 [; ;main.c: 165:     LATE = 0x00;
 [e = _LATE -> -> 0 `i `uc ]
@@ -1098,8 +1083,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 167:     LATE = 0x04;
 [e = _LATE -> -> 4 `i `uc ]
 "168
-[; ;main.c: 168:     _delay((unsigned long)((5)*(4000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+[; ;main.c: 168:     _delay((unsigned long)((1)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 "170
 [; ;main.c: 170:     LATE = 0x00;
 [e = _LATE -> -> 0 `i `uc ]
