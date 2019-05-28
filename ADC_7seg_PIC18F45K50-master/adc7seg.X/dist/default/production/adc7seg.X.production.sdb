@@ -1,0 +1,140 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"81 C:\Users\eacg3\Desktop\ADC_7seg_PIC18F45K50-master\adc7seg.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"118
+[v _interruptadc interruptadc `(i  1 e 2 0 ]
+"128
+[v _InitDisplay7Seg InitDisplay7Seg `(v  1 e 1 0 ]
+"140
+[v _Init8LEDs Init8LEDs `(v  1 e 1 0 ]
+"13 C:\Users\eacg3\Desktop\ADC_7seg_PIC18F45K50-master\adc7seg.X/config_main.h
+[v _volt volt `f  1 e 4 0 ]
+"14
+[v _adcin adcin `ui  1 e 2 0 ]
+"232 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f45k50.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3931 ]
+"327
+[v _ANSELC ANSELC `VEuc  1 e 1 @3933 ]
+"361
+[v _ANSELD ANSELD `VEuc  1 e 1 @3934 ]
+"423
+[v _ANSELE ANSELE `VEuc  1 e 1 @3935 ]
+"2901
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"3779
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"4105
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"4217
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"4626
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"5070
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"5248
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"5470
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"9636
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"9707
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"9775
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S44 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"9815
+[s S47 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S51 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S54 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S57 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S60 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S63 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[s S66 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S69 . 1 `S44 1 . 1 0 `S47 1 . 1 0 `S51 1 . 1 0 `S54 1 . 1 0 `S57 1 . 1 0 `S60 1 . 1 0 `S63 1 . 1 0 `S66 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES69  1 e 1 @4034 ]
+"9870
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"9877
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"12356
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"13788
+[v _ADIE ADIE `VEb  1 e 0 @31982 ]
+"13791
+[v _ADIF ADIF `VEb  1 e 0 @31990 ]
+"14898
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"15552
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"81 C:\Users\eacg3\Desktop\ADC_7seg_PIC18F45K50-master\adc7seg.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"116
+} 0
+"118
+[v _interruptadc interruptadc `(i  1 e 2 0 ]
+{
+[v interruptadc@adcin adcin `i  1 p 2 0 ]
+"126
+} 0
+"128
+[v _InitDisplay7Seg InitDisplay7Seg `(v  1 e 1 0 ]
+{
+"138
+} 0
+"140
+[v _Init8LEDs Init8LEDs `(v  1 e 1 0 ]
+{
+"147
+} 0
